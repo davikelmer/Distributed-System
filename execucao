@@ -1,0 +1,41 @@
+
+ javac -d bin (Get-ChildItem -Recurse -Filter *.java).FullName
+
+UDP
+ java -cp bin gateway.ApiGateway UDP 8080
+
+ java -cp bin server.Server UDP 9001 localhost:8080
+
+ java -cp bin server.Server UDP 9002 localhost:8080
+
+ java -cp bin server.Server UDP 9003 localhost:8080
+
+  java -cp bin repository.ResultRepository UDP 9100 localhost:8080
+
+
+TCP
+ java -cp bin gateway.ApiGateway TCP 8080
+
+ java -cp bin server.Server TCP 9001 localhost:8080
+
+ java -cp bin server.Server TCP 9002 localhost:8080
+
+ java -cp bin server.Server TCP 9003 localhost:8080
+
+ java -cp bin repository.ResultRepository TCP 9100 localhost:8080
+
+
+HTTP
+java -cp bin gateway.ApiGateway HTTP 8080
+
+java -cp bin server.Server HTTP 9001 localhost:8080
+
+java -cp bin server.Server HTTP 9002 localhost:8080
+
+java -cp bin server.Server HTTP 9003 localhost:8080
+
+ java -cp bin repository.ResultRepository HTTP 9100 localhost:8080
+
+
+
+

@@ -101,7 +101,6 @@ public class GatewayMessageHandler implements MessageHandler {
                     message = "SAVE|" + result + "|" + requestId2;
                     strategy.sendMessage(message, repositoryAddress.getPort()-9000);
                     break;
-
                 default:
                     System.out.println("[GATEWAY] Tipo de mensagem não reconhecido: " + command);
                     break;
